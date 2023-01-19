@@ -1,0 +1,147 @@
+html,body{
+	overflow-x: ;
+	
+	width: 100%;
+}
+
+body{
+	font-family: arial,sans-serif;
+	background:white;
+	padding:0;
+	margin: 0;
+	height: ;
+	width:;
+
+	}
+.header{
+
+	width:102%;
+	height: 40px;
+	position:fixed;
+	z-index: 10;
+	top: 0px;
+	background:green;
+	margin: 0px;
+	overflow-x: hidden;
+	border: 2px solid red;
+	
+	border-right: 100px;
+
+}
+.icon{
+		width: 22px;
+	height: 22px;
+	position: fixed;
+	z-index: 20;
+	top: 10px;
+	left: 93%;
+	cursor: pointer;
+	display: inherit;
+	background: none;
+	cursor: pointer;
+	background: none;
+}
+.sipner1{
+	width:22px;
+	height:3px;
+	background: white;
+	margin-top: 4px;
+	transition: all 0.3s;
+}
+.sipner2{
+	width: 22px;
+	height: 3px;
+	background: white;
+	margin-top: 4px;
+}
+.sipner3{
+	width: 22px;
+	height:3px;
+	background: white;
+	margin-top: 4px;
+	transition: all 0.3s;
+}
+#tigersidebar:checked ~ .icon > .sipner1{
+	transform: rotate(135deg);
+	margin-top: 8px;
+	transition: all 0.3s
+}
+#tigersidebar:checked~.icon >.sipner2{
+	opacity: 0;
+}
+#tigersidebar:checked~.icon >.sipner3{
+	transform: rotate(-135deg);
+	margin-top: -11px;
+	transition: all 0.3s
+}
+#tigersidebar:checked~#icontiger >{
+	margin-top: 70px;
+}
+#sidemenu{
+	height: 150%;
+	width: 250px;
+	background: black;
+	position: fixed;
+	visibility: scroll;
+	margin-top: 20px;
+	margin-right: 0px;
+  transform: translateX(-250px);
+ transition: transform 300ms ease-in-out
+}
+#tigersidebar:checked ~ #sidemenu{
+	transform: translateX(0px);
+}
+
+.button{
+	width: 200px;
+	height: 50px;
+	background-color: none;
+	border: 2px solid skyblue;
+	border-radius: 20px;
+	margin-top: 25px;
+	margin-left: 15px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+#tigersidebar:checked ~ .sidebar>#a5{
+	transform: translateY(0px);
+}
+#tigersidebar{
+	visibility: hidden;
+	
+}
+.h1{
+	width: 100%;
+	height: 50px;
+	background: skyblue;
+	position: fixed;
+}
+.search{
+	align-items: center;
+	float:right;
+	height: 22px;
+	margin-top: 4px;
+	margin-right: 10px;
+	border:2px solid white;
+}
+.serachicon{
+	width: 22px;
+	height:22px;
+	border-radius: 50%;
+}
+.Contact{
+	width: 50%;
+	height: 60%;
+	background-color: skyblue;
+	margin-left: 25%;
+	margin-top: 20%;
+	border:2px solid blue;
+	align-items: center;
+	align-content: center;
+}
+.input{
+	align-items: center;
+	align-content: center;
+	alignment-baseline: central;
+	margin-left: 20%
+}
